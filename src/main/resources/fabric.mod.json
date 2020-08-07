@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial",
+  "version": "${version}",
+
+  "name": "Tutorial Mod",
+  "description": "An example mod for my YouTube series!",
+  "authors": [
+    "TechnoVision"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/tutorial/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.technovision.tutorial.Tutorial"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
