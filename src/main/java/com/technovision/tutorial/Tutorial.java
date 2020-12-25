@@ -1,5 +1,6 @@
 package com.technovision.tutorial;
 
+import com.technovision.tutorial.registry.ModBlocks;
 import com.technovision.tutorial.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -10,5 +11,6 @@ public class Tutorial implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerItems();
+        ModBlocks.registerItems();
     }
 }
