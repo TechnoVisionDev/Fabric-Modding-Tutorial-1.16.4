@@ -1,4 +1,6 @@
 {
   "item.tutorial.ruby": "Ruby",
-  "block.tutorial.ruby_block": "Ruby Block"
+  "block.tutorial.ruby_block": "Ruby Block",
+  "itemGroup.tutorial.general": "Tutorial Mod",
+  "itemGroup.tutorial.other": "Additional Tab"
 }
