@@ -14,7 +14,7 @@ public class ModBlocks {
     // Mining Levels: Wood (0), Stone (1), Iron (2), Diamond (3), Netherite (4)
     public static final Block RUBY_BLOCK = new Block(FabricBlockSettings
             .of(Material.METAL, MaterialColor.RED)
-            .breakByTool(FabricToolTags.PICKAXES, 0)
+            .breakByTool(FabricToolTags.PICKAXES, 2)
             .requiresTool()
             .strength(5.0F, 6.0F)
             .sounds(BlockSoundGroup.METAL));
