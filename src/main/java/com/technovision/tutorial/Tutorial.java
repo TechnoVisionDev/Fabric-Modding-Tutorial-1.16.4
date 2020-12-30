@@ -44,7 +44,7 @@ public class Tutorial implements ModInitializer {
 
     //Loot Tables
     private static final Identifier EMERALD_ORE_LOOT_TABLE_ID = new Identifier("minecraft", "blocks/emerald_ore");
-    private static final Identifier MOD_EMERALD_ORE_LOOT_TABLE_ID = new Identifier(MOD_ID, "blocks/emerald_ore");
+    private static final Identifier RUBY_BLOCK_LOOT_TABLE_ID = new Identifier(MOD_ID, "blocks/ruby_block");
 
     @Override
     public void onInitialize() {
@@ -66,7 +66,7 @@ public class Tutorial implements ModInitializer {
                 // Inject custom loot table
                 FabricLootPoolBuilder poolBuilder2 = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootTableRange.create(1))
-                        .with(LootTableEntry.builder(MOD_EMERALD_ORE_LOOT_TABLE_ID));
+                        .with(LootTableEntry.builder(RUBY_BLOCK_LOOT_TABLE_ID));
                 supplier.withPool(poolBuilder2.build());
             }
         });
