@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorial:ruby"
+    },
+    {
+      "item": "tutorial:ruby"
+    },
+    {
+      "item": "tutorial:ruby"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}
