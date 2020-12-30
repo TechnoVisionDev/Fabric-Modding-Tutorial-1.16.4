@@ -35,8 +35,7 @@ public class Tutorial implements ModInitializer {
                 stacks.add(new ItemStack(Items.APPLE));
                 stacks.add(new ItemStack(ModItems.RUBY));
                 stacks.add(new ItemStack(Items.GLOWSTONE_DUST));
-            })
-            .build();
+            }).build();
 
     //Loot Tables
     private static final Identifier EMERALD_ORE_LOOT_TABLE_ID = new Identifier("minecraft", "blocks/emerald_ore");
@@ -48,8 +47,13 @@ public class Tutorial implements ModInitializer {
         ModItems.registerItems();
         ModBlocks.registerItems();
 
-        //Loot Pools
+        //Other
+        modifyLootTables();
+    }
+
+    private void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
+            //Only apply to emerald ore
             if (EMERALD_ORE_LOOT_TABLE_ID.equals(id)) {
 
                 // Add individual drop
